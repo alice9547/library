@@ -1,0 +1,36 @@
+PODS:
+  - FFPopup (1.1.0)
+  - Malert (4.0)
+  - QuickLayout (3.0.0)
+  - SnapKit (5.0.1)
+  - SwiftEntryKit (1.2.3):
+    - QuickLayout (= 3.0.0)
+  - Then (2.6.0)
+
+DEPENDENCIES:
+  - FFPopup
+  - Malert
+  - SnapKit
+  - SwiftEntryKit (= 1.2.3)
+  - Then
+
+SPEC REPOS:
+  trunk:
+    - FFPopup
+    - Malert
+    - QuickLayout
+    - SnapKit
+    - SwiftEntryKit
+    - Then
+
+SPEC CHECKSUMS:
+  FFPopup: 408e38711f4fe2fddd3c8612c045cf0df6da2e4e
+  Malert: 78badcb143f4df7bff1fa62f4bec05497c7865f3
+  QuickLayout: 07b45a72b10083fee3f095990cfed1c1e7b27f0a
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SwiftEntryKit: 340713c2e4a6662c5149629990bf1088bf5f0389
+  Then: 90cd104fd951cec1980a03f57704ad8f784d4d79
+
+PODFILE CHECKSUM: 11e00bda047487dbcc3e217d2ffac8742d4678a1
+
+COCOAPODS: 1.8.4

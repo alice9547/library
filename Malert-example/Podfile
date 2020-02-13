@@ -1,0 +1,14 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Malert-example' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  pod "SnapKit"
+  pod "Then"
+  pod 'Malert'
+  pod 'SwiftEntryKit', '1.2.3'
+  pod 'FFPopup'
+  # Pods for Malert-example
+
+end

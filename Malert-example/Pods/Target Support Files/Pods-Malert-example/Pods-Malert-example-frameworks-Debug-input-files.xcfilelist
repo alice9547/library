@@ -1,0 +1,7 @@
+${PODS_ROOT}/Target Support Files/Pods-Malert-example/Pods-Malert-example-frameworks.sh
+${BUILT_PRODUCTS_DIR}/FFPopup/FFPopup.framework
+${BUILT_PRODUCTS_DIR}/Malert/Malert.framework
+${BUILT_PRODUCTS_DIR}/QuickLayout/QuickLayout.framework
+${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework
+${BUILT_PRODUCTS_DIR}/SwiftEntryKit/SwiftEntryKit.framework
+${BUILT_PRODUCTS_DIR}/Then/Then.framework
