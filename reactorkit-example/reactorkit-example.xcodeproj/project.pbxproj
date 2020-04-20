@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		356F9B3F44F61893CA656481 /* Pods_reactorkit_example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0408261BB7D40D95B2CB531 /* Pods_reactorkit_example.framework */; };
 		F32A4A55244D309500B4B8A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32A4A54244D309500B4B8A8 /* AppDelegate.swift */; };
-		F32A4A59244D309500B4B8A8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32A4A58244D309500B4B8A8 /* MainViewController.swift */; };
+		F32A4A59244D309500B4B8A8 /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32A4A58244D309500B4B8A8 /* CounterViewController.swift */; };
 		F32A4A5E244D309700B4B8A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F32A4A5D244D309700B4B8A8 /* Assets.xcassets */; };
 		F32A4A61244D309700B4B8A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F32A4A5F244D309700B4B8A8 /* LaunchScreen.storyboard */; };
-		F32A4A6C244D325300B4B8A8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F32A4A62244D309700B4B8A8 /* Info.plist */; };
+		F32A4A6E244D331600B4B8A8 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32A4A6D244D331600B4B8A8 /* BaseViewController.swift */; };
+		F32A4A70244D373600B4B8A8 /* CounterViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32A4A6F244D373600B4B8A8 /* CounterViewReactor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,10 +22,12 @@
 		DB6733BC1E903E21DB8BB7BE /* Pods-reactorkit-example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactorkit-example.debug.xcconfig"; path = "Target Support Files/Pods-reactorkit-example/Pods-reactorkit-example.debug.xcconfig"; sourceTree = "<group>"; };
 		F32A4A51244D309500B4B8A8 /* reactorkit-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "reactorkit-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F32A4A54244D309500B4B8A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F32A4A58244D309500B4B8A8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		F32A4A58244D309500B4B8A8 /* CounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewController.swift; sourceTree = "<group>"; };
 		F32A4A5D244D309700B4B8A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F32A4A60244D309700B4B8A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F32A4A62244D309700B4B8A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F32A4A6D244D331600B4B8A8 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		F32A4A6F244D373600B4B8A8 /* CounterViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewReactor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +107,9 @@
 		F32A4A6A244D30C700B4B8A8 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				F32A4A58244D309500B4B8A8 /* MainViewController.swift */,
+				F32A4A6D244D331600B4B8A8 /* BaseViewController.swift */,
+				F32A4A58244D309500B4B8A8 /* CounterViewController.swift */,
+				F32A4A6F244D373600B4B8A8 /* CounterViewReactor.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -114,8 +119,16 @@
 			children = (
 				F32A4A54244D309500B4B8A8 /* AppDelegate.swift */,
 				F32A4A6A244D30C700B4B8A8 /* ViewControllers */,
+				F32A4A73244D57ED00B4B8A8 /* Models */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		F32A4A73244D57ED00B4B8A8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,7 +193,6 @@
 			files = (
 				F32A4A61244D309700B4B8A8 /* LaunchScreen.storyboard in Resources */,
 				F32A4A5E244D309700B4B8A8 /* Assets.xcassets in Resources */,
-				F32A4A6C244D325300B4B8A8 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,8 +245,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F32A4A59244D309500B4B8A8 /* MainViewController.swift in Sources */,
+				F32A4A59244D309500B4B8A8 /* CounterViewController.swift in Sources */,
 				F32A4A55244D309500B4B8A8 /* AppDelegate.swift in Sources */,
+				F32A4A70244D373600B4B8A8 /* CounterViewReactor.swift in Sources */,
+				F32A4A6E244D331600B4B8A8 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

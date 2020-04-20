@@ -11,4 +11,10 @@ target 'reactorkit-example' do
   pod 'ReactorKit'
   pod 'SnapKit'
   pod 'Then'
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'RxDataSources'
+  pod 'RxOptional'
+  pod 'RxViewController'
+
 end

@@ -19,11 +19,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window.backgroundColor = .white
         window.makeKeyAndVisible()
         
-        let viewController = MainViewController()
-        window.rootViewController = viewController
+        let counterViewController = CounterViewController()
+        let counterViewReactor = CounterViewReactor()
+        counterViewController.reactor = counterViewReactor
+        window.rootViewController = counterViewController
 
         self.window = window
-        return true
         
         return true
     }
